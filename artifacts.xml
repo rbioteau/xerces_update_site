@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='Xerces Java' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1608556185685'/>
+    <property name='publishPackFilesAsSiblings' value='true'/>
+  </properties>
+  <mappings size='5'>
+    <rule filter='(&amp; (classifier=osgi.bundle) (format=packed))' output='${repoUrl}/plugins/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature) (format=packed))' output='${repoUrl}/features/${id}_${version}.jar.pack.gz'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='2'>
+    <artifact classifier='osgi.bundle' id='org.apache.xerces.source' version='2.12.1.v20201221-1309'>
+      <properties size='9'>
+        <property name='artifact.size' value='2079982'/>
+        <property name='download.size' value='2079982'/>
+        <property name='maven-groupId' value='org.eclipse.orbit.bundles'/>
+        <property name='maven-artifactId' value='org.apache.xerces'/>
+        <property name='maven-version' value='2.12.1-SNAPSHOT'/>
+        <property name='maven-classifier' value='sources'/>
+        <property name='download.md5' value='410fc6572a4a6831234e6180ab8d0ee1'/>
+        <property name='download.checksum.md5' value='410fc6572a4a6831234e6180ab8d0ee1'/>
+        <property name='download.checksum.sha-256' value='7c2d605d775855eadbd96f546db47927ef196a9774478b9f205b95600294c1c9'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.xerces' version='2.12.1.v20201221-1309'>
+      <properties size='8'>
+        <property name='artifact.size' value='1457776'/>
+        <property name='download.size' value='1457776'/>
+        <property name='maven-groupId' value='org.eclipse.orbit.bundles'/>
+        <property name='maven-artifactId' value='org.apache.xerces'/>
+        <property name='maven-version' value='2.12.1-SNAPSHOT'/>
+        <property name='download.md5' value='cd203d53d8f0bbfcc4a915fe74a13211'/>
+        <property name='download.checksum.md5' value='cd203d53d8f0bbfcc4a915fe74a13211'/>
+        <property name='download.checksum.sha-256' value='3c32adc71228756e0f439293a80147900ed291a6ef0188f1dd363dbda5490379'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>
